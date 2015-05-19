@@ -5,6 +5,8 @@ fav_food_list = []
   fav_food_list << gets.chomp
 end
 
-fav_food_list.each do |food|
-  puts "I love #{food}"
+
+fav_food_list.each_with_index do |food, number|
+  number += 1
+  puts "#{number}. I love #{food}"
 end
